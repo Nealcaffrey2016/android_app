@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-13dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/title"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/person_picture"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/person_picture"
+                android:onClick="reChangePicture"
+                ></ImageView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:text="@string/person_name"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="8dp"
+                android:layout_marginTop="20dp"
+
+
+                android:scaleType="fitCenter"
+                android:src="@drawable/love4"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/image"
+                android:layout_alignBottom="@+id/image"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="test"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="20dp"></TextView>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/text_body"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/holo_blue_dark"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/text_cotent"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="check"
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_orange_light"
+            android:layout_margin="12dp"
+            android:onClick="checkOne"></CheckBox>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_purple"
+                android:onClick="acceptOne"
+                android:text="@string/button_accept"
+                android:textAllCaps="false"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/send_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_purple"
+                android:onClick="sendEmail"
+                android:text="@string/send_button"
+                android:textAllCaps="true"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_purple"
+                android:onClick="rejectOne"
+                android:text="@string/button_reject"
+                android:textAllCaps="false"
+                android:textSize="20sp">
+
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

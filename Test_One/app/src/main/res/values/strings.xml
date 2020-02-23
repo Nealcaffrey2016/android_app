@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Test Shopping List App@Neal\n wangbao.2010.cool@163.com</string>
+    <string name="text_cotent">Hello, Neal!\n Come on ,you will be the best!\n You will sucess!\n Believe yourself!</string>
+    <string name="title">ShoppingList</string>
+    <string name="person_name">Neal</string>
+    <string name="send_button">Send</string>
+    <string name="button_accept">Accept</string>
+    <string name="button_reject">Reject</string>
+</resources>
